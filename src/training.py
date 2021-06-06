@@ -39,11 +39,4 @@ def train_model():
 
 
 if __name__ == "__main__":
-    print(f"Training model.")
     train_model()
-    # with open(model_path, "rb") as f:
-    #     mdl = pickle.load(f)
-    # data = pd.read_csv(dataset_csv_path)
-    # X = data.copy().drop("corporation", axis=1)
-    # y = X.pop("exited").ravel()
-    # print(mdl.predict(X))

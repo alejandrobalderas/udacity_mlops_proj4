@@ -17,7 +17,8 @@ output_file = os.path.join(config["output_model_path"], "apireturns.txt")
 
 # In apicalls.py, call API’s to get the model predictions, accuracy score, summary statistics, and diagnostics that are returned by the API endpoints
 print(f"Testing api calls")
-response1 = requests.post(f"{URL}/prediction?filename=testdata/testdata.csv")
+response1 = requests.post(
+    f"{URL}/prediction?filename=testdata/testdata.csv")
 response2 = requests.get(f"{URL}/scoring")
 response3 = requests.get(f"{URL}/summarystats")
 response4 = requests.get(f"{URL}/diagnostics")

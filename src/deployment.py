@@ -21,7 +21,7 @@ mdl_output_path = config["output_model_path"]
 
 
 # function for deployment
-def store_model_into_pickle():
+def copy_for_deployment():
     # copy the latest pickle file, the latestscore.txt value, and the ingestfiles.txt file into the deployment directory
 
     files_to_copy = ["trainedmodel.pkl",
@@ -39,4 +39,4 @@ def store_model_into_pickle():
 
 
 if __name__ == "__main__":
-    store_model_into_pickle()
+    copy_for_deployment()

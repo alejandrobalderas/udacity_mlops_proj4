@@ -3,7 +3,7 @@ import numpy as np
 import os
 import json
 from datetime import datetime
-from typing import List, Set
+from typing import List
 
 
 # Load config.json and get input and output paths
